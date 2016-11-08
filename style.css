@@ -1,0 +1,35 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+figure{
+    margin: 8% auto 0;
+    max-width: 350px;
+    width: 100%;
+}
+
+figure img{
+    width: 100%;
+    vertical-align: top;
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in-out;
+}
+
+figure figcaption{
+    background: #000;
+    color: #fff;
+    padding: 10px 10px 20px;
+    text-align: justify;
+}
+
+figure figcaption h3{
+    line-height: 40px;
+    font-weight: 100;
+    font-size: 24px;
+}
+
+figure:hover img{
+    filter: grayscale(0);
+}
